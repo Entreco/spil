@@ -1,3 +1,4 @@
+package nl.entreco.spil;
 
 /**
  * {@link .Main.java}
