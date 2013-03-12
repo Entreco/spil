@@ -3,7 +3,4 @@
  *
  * @author Entreco © Entreco - 2013
  */
-/**
- *
- */
 package nl.entreco.spil.io;

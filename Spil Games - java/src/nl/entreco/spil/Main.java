@@ -10,10 +10,11 @@ import nl.entreco.spil.io.InputReader;
 /**
  * {@link .Main.java}
  *
+ * This is the entry point.
+ * Requirements:
+ * 	- create a valid .txt file in the root of the project
+ *	
  * @author Entreco © Entreco - 2013
- */
-/**
- *
  */
 public class Main {
 	
@@ -21,7 +22,7 @@ public class Main {
 	 * Debug Settings
 	 ***************************************/
 	
-	/** Shows all println Messages */
+	/** Set to true to show debug output */
 	public static final boolean	DEBUG	= false;	// false in release
 	
 	/****************************************
@@ -30,7 +31,6 @@ public class Main {
 	 * 1) Parses a text file
 	 * 2) Prints the Maximum blob size
 	 ***************************************/
-	
 	public static void main(String[] args) {
 		// ArrayList with all the boards
 		ArrayList<Board> cases = null;
