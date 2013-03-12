@@ -1,1 +1,5 @@
 nl.entreco.spil
+nl.entreco.spil.dto
+nl.entreco.spil.exceptions
+nl.entreco.spil.io
+nl.entreco.spil.utils
