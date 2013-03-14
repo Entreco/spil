@@ -37,22 +37,20 @@ public class Main {
 		
 		// Read the input File
 		try {
+			
 			cases = InputReader.readInput("inputs.txt");
+			long start = System.currentTimeMillis();
+			// All Boards are now parsed, let's solve them
+			for (Board board : cases) {
+				System.out.println(board.findBiggestBlob());
+			}
+			System.out.println("done in " + (System.currentTimeMillis() - start) + "ms");
 		} catch (FileNotFoundException e) {
-			if (Main.DEBUG) {
-				e.printStackTrace();
-			}
-			System.err.println("file not found");
+			System.err.println("file not found e:" + e.getLocalizedMessage());
 		} catch (InvalidInputFormatException e) {
-			if (Main.DEBUG) {
-				e.printStackTrace();
-			}
-			System.err.println("file has an invalid format");
+			e.printStackTrace();
+			System.err.println("file has an invalid format:" + e.getLocalizedMessage());
 		}
 		
-		// All Boards are now parsed, let's solve them
-		for (Board board : cases) {
-			System.out.println(board.findBiggestBlob());
-		}
 	}
 }
